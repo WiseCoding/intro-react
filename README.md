@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center"><b>Intro React JS</b></h2>
 
-## Available Scripts
+<p align="center">
+  <a href="https://reactjs.org/" target="_blank">
+    <img alt="Badge ReactJS" src="https://img.shields.io/badge/REACT-yellow?style=flat&logo=react" />
+  </a>
+    <a href="https://tailwindcss.com/" target="_blank">
+    <img alt="Badge Tailwindcss" src="https://img.shields.io/badge/TAILWIND-blue?style=flat&logo=tailwind-css" />
+  </a>
+</p>
 
-In the project directory, you can run:
+<h2 align="center">
+  <a href="https://wisecoding.github.io/intro-react/" target="_blank">🌐 Live</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://github.com/WiseCoding/intro-react#readme" target="_blank">📂 Repo</a>
+</h2>
 
-### `npm start`
+# Assignment 📝
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> This time the task is simple: you will build a small Todo application that lives in your browser, and saves todos even after browsers restart.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> [Solo Assignment](https://github.com/becodeorg/gnt-yu-3-21/tree/master/3.The-Mountain/8.React) by [BeCode](https://becode.org/) 🎓
 
-### `npm test`
+## _Must-have features_
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add todo functionality
+- Remove todo functionality
+- Save todos even if browser restarts
 
-### `npm run build`
+# The Team 👥
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[👨🏼‍💻Mattias](https://github.com/WiseCoding/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Built with 🛠
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[![VSCODE](https://img.shields.io/badge/VSCODE-black?style=flat&logo=visual-studio-code)](https://code.visualstudio.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-red?style=flat&logo=html5&logoColor=white)](https://html.com/)
+[![MARKDOWN](https://img.shields.io/badge/MARKDOWN-black?style=flat&logo=markdown)](https://www.markdownguide.org/)
+[![REACT](https://img.shields.io/badge/REACT-yellow?style=flat&logo=react)](https://reactjs.org/)
+[![TAILWIND](https://img.shields.io/badge/TAILWIND-blue?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 
-### `npm run eject`
+# License 📎
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright © 2020 [Mattias](https://github.com/WiseCoding).<br />
+This project is [MIT](https://github.com/WiseCoding/intro-react/blob/main/LICENSE) licensed.
