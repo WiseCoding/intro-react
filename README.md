@@ -10,7 +10,7 @@
 </p>
 
 <h2 align="center">
-  <a href="https://wisecoding.github.io/intro-react/" target="_blank">🌐 Live</a>
+  <a href="https://intro-react-mattias.netlify.app/" target="_blank">🌐 Live</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
   <a href="https://github.com/WiseCoding/intro-react#readme" target="_blank">📂 Repo</a>
 </h2>
