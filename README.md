@@ -39,6 +39,11 @@
 [![REACT](https://img.shields.io/badge/REACT-yellow?style=flat&logo=react)](https://reactjs.org/)
 [![TAILWIND](https://img.shields.io/badge/TAILWIND-blue?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 
+## Libraries 📚
+
+- [UUID](https://www.npmjs.com/package/uuid)
+- [UNIQID](https://www.npmjs.com/package/uniqid)
+
 # License 📎
 
 Copyright © 2020 [Mattias](https://github.com/WiseCoding).<br />
