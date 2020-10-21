@@ -5,7 +5,7 @@ const Todo = ({ id, body, complete, remove }) => {
     <div className='flex flex-row justify-between items-center m-1 p-1 pl-4 bg-gray-200 rounded-full'>
       <p className='text-justify p-2'>{body}</p>
       <div className='flex flex-row'>
-        <div title='Complete' onClick={complete}>
+        <div title='Complete' onClick={complete(id)}>
           <svg
             className='w-6 h-6 mx-1 p-1 bg-green-400 rounded-full transform hover:scale-125 hover:bg-green-500'
             fill='currentColor'
@@ -19,7 +19,7 @@ const Todo = ({ id, body, complete, remove }) => {
             />
           </svg>
         </div>
-        <div title='Delete' onClick={remove}>
+        <div title='Delete' onClick={remove(id)}>
           <svg
             title='Delete'
             className='w-6 h-6 mx-1 mr-2 p-1 bg-red-400 rounded-full transform hover:scale-125 hover:bg-red-500'

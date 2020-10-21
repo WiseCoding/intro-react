@@ -1,10 +1,9 @@
 import React from 'react';
 
-const AddTodo = ({ setNewTodo, addNewTodo }) => {
+const AddTodo = ({ addNewTodo }) => {
   const setUserInput = (e) => {
     e.preventDefault();
-    setNewTodo(e.target.input.value);
-    addNewTodo();
+    addNewTodo(e.target.input.value);
   };
 
   return (

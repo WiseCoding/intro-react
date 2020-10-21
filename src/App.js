@@ -8,32 +8,20 @@ import TodoList from './components/TodoList';
 
 const App = () => {
   // STATE
-  const [newTodo, setNewTodo] = useState('');
-  const [todosState, setTodos] = useState([
-    {
-      id: uniqid(),
-      body: 'What is this',
-      completed: false,
-    },
-    {
-      id: uniqid(),
-      body: 'No really What??',
-      completed: false,
-    },
-  ]);
+  const [todosState, setTodos] = useState([]);
 
   // FUNCTIONS
-  const addNewTodo = () => {
+  const addNewTodo = (newBody) => {
     setTodos([
       ...todosState,
-      { id: uniqid(), body: newTodo, completed: false },
+      { id: uniqid(), body: newBody, completed: false },
     ]);
   };
-  const completeTodo = (id) => {
-    console.log('completed', id);
+  const completeTodo = () => {
+    console.log('completed');
   };
-  const removeTodo = (id) => {
-    console.log('deleted', id);
+  const removeTodo = () => {
+    console.log('deleted');
   };
 
   // JSX
@@ -41,7 +29,7 @@ const App = () => {
     <div className='relative h-full flex flex-col text-center'>
       <Header />
       <div className='flex-grow container mx-auto m-6'>
-        <AddTodo setNewTodo={setNewTodo} addNewTodo={addNewTodo} />
+        <AddTodo addNewTodo={addNewTodo} />
         <TodoList
           todos={todosState}
           complete={completeTodo}
