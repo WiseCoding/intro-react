@@ -19,11 +19,18 @@ const App = () => {
   };
 
   const removeTodo = (id) => {
-    setTodos(todosState.filter((el) => el.id !== id));
+    setTodos(todosState.filter((todo) => todo.id !== id));
   };
 
   const completeTodo = (id) => {
-    console.log('completed', id);
+    setTodos(
+      todosState.map((todo) => {
+        if (todo.id === id) {
+          return { ...todo, completed: !todo.completed };
+        }
+        return todo;
+      })
+    );
   };
 
   // JSX

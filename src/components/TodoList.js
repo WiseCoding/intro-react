@@ -11,6 +11,7 @@ const TodoList = ({ todos, complete, remove }) => {
             key={todo.id}
             id={todo.id}
             body={todo.body}
+            completed={todo.completed}
             complete={complete}
             remove={remove}
           />
