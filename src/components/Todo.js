@@ -14,11 +14,9 @@ const Todo = ({ id, body, completed, complete, remove }) => {
     <div className='flex flex-row justify-between items-center my-2 p-1 bg-gray-200 rounded-full'>
       <div title='Mark as complete!' onClick={completeTodo}>
         <svg
-          className={
-            'w-6 h-6 mx-1 ml-2 p-1 rounded-full transform hover:scale-125 hover:bg-green-500 border border-gray-700 cursor-pointer' +
-            ' ' +
-            (completed ? 'bg-green-400 scale-125' : 'bg-gray-400')
-          }
+          className={`w-6 h-6 mx-1 ml-2 p-1 rounded-full transform hover:scale-125 hover:bg-green-500 border border-gray-700 cursor-pointer ${
+            completed ? 'bg-green-400 scale-125' : 'bg-gray-400'
+          }`}
           fill='currentColor'
           viewBox='0 0 20 20'
           xmlns='http://www.w3.org/2000/svg'
@@ -31,11 +29,9 @@ const Todo = ({ id, body, completed, complete, remove }) => {
         </svg>
       </div>
       <p
-        className={
-          'text-left w-full overflow-y-scroll p-2' +
-          ' ' +
-          (completed ? 'line-through text-gray-400' : 'text-black')
-        }
+        className={`text-left w-full overflow-y-scroll p-2 ${
+          completed ? 'line-through text-gray-400' : 'text-black'
+        }`}
       >
         {body}
       </p>

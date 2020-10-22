@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import uniqid from 'uniqid';
 //
 import Header from './components/Header';
@@ -10,13 +10,29 @@ const App = () => {
   // STATE
   const [todos, setTodos] = useState([]);
 
+  // ON PAGE LOAD
+  useEffect(() => {
+    if (localStorage.getItem('todos') === null) {
+      localStorage.setItem('todos', JSON.stringify([]));
+    } else {
+      setTodos(JSON.parse(localStorage.getItem('todos')));
+    }
+  }, []);
+
+  // ON TODOS CHANGE
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
+
   // FUNCTIONS
   const addNewTodo = (newBody) => {
     setTodos([...todos, { id: uniqid(), body: newBody, completed: false }]);
   };
+
   const removeTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
+
   const completeTodo = (id) => {
     setTodos(
       todos.map((todo) => {
@@ -35,7 +51,7 @@ const App = () => {
       <div className='flex-grow container mx-auto m-6'>
         <div className='mx-3'>
           <AddTodo addNewTodo={addNewTodo} />
-          {todos.length === 1 ? (
+          {todos.length > 0 ? (
             <TodoList
               todos={todos}
               complete={completeTodo}
