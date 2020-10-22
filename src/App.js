@@ -17,11 +17,13 @@ const App = () => {
       { id: uniqid(), body: newBody, completed: false },
     ]);
   };
-  const completeTodo = () => {
-    console.log('completed');
+
+  const removeTodo = (id) => {
+    setTodos(todosState.filter((el) => el.id !== id));
   };
-  const removeTodo = () => {
-    console.log('deleted');
+
+  const completeTodo = (id) => {
+    console.log('completed', id);
   };
 
   // JSX
@@ -29,12 +31,14 @@ const App = () => {
     <div className='relative h-full flex flex-col text-center'>
       <Header />
       <div className='flex-grow container mx-auto m-6'>
-        <AddTodo addNewTodo={addNewTodo} />
-        <TodoList
-          todos={todosState}
-          complete={completeTodo}
-          remove={removeTodo}
-        />
+        <div className='mx-3'>
+          <AddTodo addNewTodo={addNewTodo} />
+          <TodoList
+            todos={todosState}
+            complete={completeTodo}
+            remove={removeTodo}
+          />
+        </div>
       </div>
       <Footer />
     </div>

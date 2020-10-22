@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='flex-shrink-0 bg-white w-full bg-gradient-to-r from-blue-600 to-green-600 border-2 border-white md:rounded-t-full'>
+    <footer className='flex-shrink-0 bg-white w-full bg-gradient-to-r from-blue-600 to-green-600 md:rounded-t-3xl'>
       <div className='sm:px-6 lg:px-8 px-4 py-2 mx-auto space-y-8 overflow-hidden'>
         <div className='px-5 py-2 flex justify-center'>
           <a
