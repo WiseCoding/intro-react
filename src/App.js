@@ -8,23 +8,18 @@ import TodoList from './components/TodoList';
 
 const App = () => {
   // STATE
-  const [todosState, setTodos] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   // FUNCTIONS
   const addNewTodo = (newBody) => {
-    setTodos([
-      ...todosState,
-      { id: uniqid(), body: newBody, completed: false },
-    ]);
+    setTodos([...todos, { id: uniqid(), body: newBody, completed: false }]);
   };
-
   const removeTodo = (id) => {
-    setTodos(todosState.filter((todo) => todo.id !== id));
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
-
   const completeTodo = (id) => {
     setTodos(
-      todosState.map((todo) => {
+      todos.map((todo) => {
         if (todo.id === id) {
           return { ...todo, completed: !todo.completed };
         }
@@ -40,11 +35,20 @@ const App = () => {
       <div className='flex-grow container mx-auto m-6'>
         <div className='mx-3'>
           <AddTodo addNewTodo={addNewTodo} />
-          <TodoList
-            todos={todosState}
-            complete={completeTodo}
-            remove={removeTodo}
-          />
+          {todos.length === 1 ? (
+            <TodoList
+              todos={todos}
+              complete={completeTodo}
+              remove={removeTodo}
+            />
+          ) : (
+            <p className='font-mono'>
+              All done{' '}
+              <span role='img' aria-label='SleepyFace'>
+                🎉
+              </span>
+            </p>
+          )}
         </div>
       </div>
       <Footer />

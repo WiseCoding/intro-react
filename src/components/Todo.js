@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Todo = ({ id, body, completed, complete, remove }) => {
+  // FUNCTIONS
   const removeTodo = () => {
     remove(id);
   };
@@ -8,6 +9,7 @@ const Todo = ({ id, body, completed, complete, remove }) => {
     complete(id);
   };
 
+  // JSX
   return (
     <div className='flex flex-row justify-between items-center my-2 p-1 bg-gray-200 rounded-full'>
       <div title='Mark as complete!' onClick={completeTodo}>

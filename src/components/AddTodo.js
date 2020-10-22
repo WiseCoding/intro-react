@@ -1,5 +1,6 @@
 import React from 'react';
 
+// FUNCTIONS
 const AddTodo = ({ addNewTodo }) => {
   const setUserInput = (e) => {
     e.preventDefault();
@@ -7,6 +8,7 @@ const AddTodo = ({ addNewTodo }) => {
     e.target.input.value = '';
   };
 
+  // JSX
   return (
     <div className='max-w-xl mx-auto my-8 p-2 shadow-lg rounded-xl bg-white relative'>
       <form action='' onSubmit={setUserInput}>
