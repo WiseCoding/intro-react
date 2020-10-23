@@ -11,7 +11,7 @@ const Todo = ({ id, body, completed, complete, remove }) => {
 
   // JSX
   return (
-    <div className='flex flex-row justify-between items-center my-2 p-1 bg-gray-200 rounded-full'>
+    <div className='flex flex-row items-center justify-between p-1 my-2 bg-gray-200 rounded-full'>
       <div title='Mark as complete!' onClick={completeTodo}>
         <svg
           className={`w-6 h-6 mx-1 ml-2 p-1 rounded-full transform hover:scale-125 hover:bg-green-500 border border-gray-700 cursor-pointer ${
@@ -30,14 +30,14 @@ const Todo = ({ id, body, completed, complete, remove }) => {
       </div>
       <p
         className={`text-left w-full overflow-y-scroll p-2 ${
-          completed ? 'line-through text-gray-400' : 'text-black'
+          completed ? 'line-through text-gray-500' : 'text-black'
         }`}
       >
         {body}
       </p>
       <div title='Delete me!' onClick={removeTodo}>
         <svg
-          className='w-6 h-6 mx-1 mr-2 p-1 bg-red-300 rounded-full transform hover:scale-125 hover:bg-red-500 border border-gray-700 cursor-pointer'
+          className='hover:scale-125 hover:bg-red-500 w-6 h-6 p-1 mx-1 mr-2 transform bg-red-300 border border-gray-700 rounded-full cursor-pointer'
           fill='none'
           stroke='currentColor'
           viewBox='0 0 24 24'
