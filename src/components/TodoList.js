@@ -37,8 +37,8 @@ const TodoList = ({ todos, complete, remove }) => {
       <div className='rounded-t-xl flex flex-row items-center justify-between text-white bg-gray-700'>
         <div
           onClick={toggleCompleted}
-          className={` text-white hover:text-blue-600 m-2 cursor-pointer transform bg-gray-900 rounded-full p-1 hover:bg-white border border-gray-300 ${
-            hideCompleted ? 'bg-green-500 scale-125' : ''
+          className={` text-white hover:text-blue-600 m-2 cursor-pointer transform bg-gray-900 p-1 hover:bg-white border border-gray-300 ${
+            hideCompleted ? 'bg-green-500 rounded-lg scale-125' : 'rounded-full'
           }`}
           title='Hide Completed'
         >
