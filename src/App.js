@@ -46,9 +46,9 @@ const App = () => {
 
   // JSX
   return (
-    <div className='relative h-full flex flex-col text-center'>
+    <div className='relative flex flex-col h-full text-center'>
       <Header />
-      <div className='flex-grow container mx-auto m-6'>
+      <div className='container flex-grow m-6 mx-auto'>
         <div className='mx-3'>
           <AddTodo addNewTodo={addNewTodo} />
           {todos.length > 0 ? (
