@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://reactjs.org/" target="_blank">
-    <img alt="Badge ReactJS" src="https://img.shields.io/badge/REACT-yellow?style=flat&logo=react" />
+    <img alt="Badge React JS" src="https://img.shields.io/badge/REACT-yellow?style=flat&logo=react" />
   </a>
     <a href="https://tailwindcss.com/" target="_blank">
     <img alt="Badge Tailwindcss" src="https://img.shields.io/badge/TAILWIND-blue?style=flat&logo=tailwind-css" />
